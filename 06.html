@@ -16,10 +16,23 @@
 
     //ENTRADA
 
+    const etapasLoteA = ["Corte", "Montagem", "Pintura", "Verificação de Qualidade", "Embalagem"];
+
+    let qtd = Number(prompt(`Informe a quantidade de etapas do processo produtivo:`));
+
 
     //PROCESSAMENTO
 
+    const temNumeroCorretoDeEtapas = etapasLoteA.length === qtd;
+    const passouNaQualidade = etapasLoteA.includes(`Verificação de Qualidade`);
+    const loteAprovado = temNumeroCorretoDeEtapas && passouNaQualidade;
 
     //SAÍDA
-    
+
+    if (loteAprovado) {
+        alert(`O lote foi aprovado`);
+    } else {
+        alert(`O lote não foi aprovado`);
+    }
+
 </script>

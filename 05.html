@@ -18,10 +18,18 @@
 
     //ENTRADA
 
+    const codigosDeAcesso = ["Delta-7", "Alpha-9", "Omega-3", "Gama-4", "Zeta-1"];
+
 
     //PROCESSAMENTO
 
+    let publica = codigosDeAcesso.slice(1, 4);
+    let codigosAtualizados = ["Delta-7", "Alpha-9", "Sigma-5", "Gama-4", "Zeta-1"];
 
     //SAÍDA
-    
+
+    alert(`Lista Original: ${codigosDeAcesso.join(`, `)}
+    Lista Pública: ${publica.join(`, `)}
+    Lista Atualizada: ${codigosAtualizados.join(`, `)}`)
+
 </script>

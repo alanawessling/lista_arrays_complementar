@@ -13,13 +13,27 @@
     Use um único método de array para remover o jogadorSai e, na mesma posição, adicionar o jogadorEntra.
     Exiba a escalação final do time.
     */
-    
+
     //ENTRADA
 
+    let timeTitular = ["Phoenix", "Jett", "Sova", "Sage", "Cypher"];
+
+    let jSai = prompt(`Informe jogador que vai sair:`);
+    let jEntra = prompt(`Informe jogador que vai entrar:`);
 
     //PROCESSAMENTO
 
+    let indice = timeTitular.indexOf(jSai);
 
-    //SAÍDA
-    
+    if (indice !== -1) {
+        timeTitular.splice(indice, 1, jEntra);
+    }
+    else {
+        alert(`Dados Inválidos!`);
+    }
+
+    // SAÍDA
+
+    alert(`A escalação final do time é: ${timeTitular.join(`, `)}`);
+
 </script>

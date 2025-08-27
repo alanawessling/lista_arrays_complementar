@@ -17,10 +17,18 @@
 
     //ENTRADA
 
+    const equipeAlpha = ["Agente Smith", "Agente Jones", "Técnico Brown", "Analista White"];
+    const equipeBravo = ["Especialista Green", "Piloto Black", "Médica Grey", "Engenheiro Blue"];
 
     //PROCESSAMENTO
 
+    let membrosAlpha = equipeAlpha.slice(0, 2);
+    let membrosBravo = equipeBravo.slice(2, 4);
+
+    let equipeDeElite = [...membrosAlpha, ...membrosBravo];
 
     //SAÍDA
-    
+
+    alert(`Equipe de Elite: ${equipeDeElite.join(`, `)}`);
+
 </script>

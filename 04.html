@@ -16,10 +16,21 @@
 
     //ENTRADA
 
+    let ingredientes = ["Farinha", "Açúcar", "Ovos", "Sal", "Chocolate"];
+
+    let secreto = prompt(`Existe algum ingrediente secreto?`).toUpperCase();
+    let iSecreto = prompt(`Qual o ingrediente secreto?`);
 
     //PROCESSAMENTO
 
+    let posicaoIngrediente = ingredientes.indexOf(iSecreto);
 
     //SAÍDA
-    
+
+    if (posicaoIngrediente !== -1) {
+        alert(`A posição do ingrediente secreto é: ${posicaoIngrediente}`);
+    } else {
+        alert(`A receita contém o Ingrediente Secreto? NÃO`);
+    }
+
 </script>

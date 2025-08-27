@@ -15,10 +15,21 @@
 
     //ENTRADA
 
+    const convidadosVIP = ["Angela", "Ricardo", "Julia", "Marcos", "Fernanda"];
+
+    let nomeConvidado = prompt(`Informe o nome que deseja verificar:`);
 
     //PROCESSAMENTO
 
+    let liberado = convidadosVIP.includes(nomeConvidado);
 
     //SAÍDA
-    
+
+    if (liberado) {
+        alert(`Acesso liberado!`);
+    }
+    else {
+        alert(`Acesso negado.`);
+    }
+
 </script>
