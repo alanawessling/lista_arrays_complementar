@@ -15,10 +15,17 @@
 
     //ENTRADA
 
+    let playlist = ["Everlong", "The Pretender", "Learn to Fly"]
+
+    let musica = prompt(`Informe uma música que queira adicionar na sua playlist:`);
 
     //PROCESSAMENTO
 
+    playlist.push(musica);
+    playlist.shift(0, 1);
 
     //SAÍDA
-    
+
+    alert(`Sua playlist foi atualizada para ${playlist.join(`, `)}`);
+
 </script>

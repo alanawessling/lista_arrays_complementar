@@ -14,10 +14,17 @@
 
     //ENTRADA
 
+    let jogadores = ["Pedro", "Sofia", "Lucas", "Helena", "Gabriel", "Laura"];
 
     //PROCESSAMENTO
 
+    let metade = jogadores.length / 2;
+    let timeAzul = jogadores.slice(0, metade);      
+    let timeVermelho = jogadores.slice(metade);
 
     //SAÍDA
+
+    alert(`O time azul é: ${timeAzul.join(`, `)}`);
+    alert(`O time Vermelho é: ${timeVermelho.join(`, `)}`);
     
 </script>
